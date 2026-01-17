@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shrek World - Click Attack Game by Othman Igdem">
+  <meta name="author" content="Othman Igdem">
+  <title>Shrek World</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <h2>Shrek World</h2>
+    <nav>
+      <a href="#intro">Home</a>
+      <a href="#game">Game</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <!-- INTRO SCREEN -->
+  <main id="intro" class="screen active">
+    <img src="images/shrek.png" class="anime-img" alt="Shrek character">
+    <h1 class="anime-title"><i>WELCOME TO SHREK WORLD</i></h1>
+    <p class="anime-sub"><i>Website By Othman Igdem</i></p>
+    <button class="start-btn" onclick="enterGame()">START</button>
+  </main>
+
+  <!-- GAME SCREEN -->
+  <section id="game" class="screen">
+    <h1 class="game-title">🔥 CLICK ATTACK 🔥</h1>
+    <p>Score: <span id="score">0</span></p>
+
+    <!-- Enemy -->
+    <div class="enemy">
+      <div class="enemy-life" id="enemyLife"></div>
+    </div>
+    <p id="enemyHP">Enemy HP: 100</p>
+
+    <!-- Combo -->
+    <p id="combo">Combo: 0</p>
+
+    <button class="attack-btn" onclick="attack()">⚔️ ATTACK</button>
+    <button class="power-btn" onclick="powerAttack()">💥 POWER ATTACK</button>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="screen about-screen">
+    <h2>About Shrek World</h2>
+    <p>This interactive click game is created by <strong>Othman Igdem</strong>. 
+    Fight enemies, use combos, and power attacks to defeat them! Designed to work on both desktop and mobile.</p>
+  </section>
+
+  <!-- FOOTER -->
+  <!-- <footer>
+    <p>&copy; 2026 Shrek World. All rights reserved.</p>
+  </footer> -->
+
+  <script src="script.js" defer></script>
+</body>
+</html>
